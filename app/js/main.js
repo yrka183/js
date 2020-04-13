@@ -1,3 +1,5 @@
+"use strict";
+
 let money = prompt("Ваш бюджет на месяц"),
     time  = prompt("Введите вашу дату в формате YYYY-MM-DD"),
     appData = {
@@ -13,15 +15,54 @@ let money = prompt("Ваш бюджет на месяц"),
       savings:false
     };
 
-let cost1 = prompt("Введите обязательную статью расходов в этом месяце?");
-let price1 = prompt("Во сколько обойдется?");
-let cost2 = prompt("Введите обязательную статью расходов в этом месяце?");
-let price2 = prompt("Во сколько обойдется?");
+    // for(let i = 0; i < 2; i++) {
+    //   let cost = prompt("Введите обязательную статью расходов в этом месяце?");
+    //   let price = prompt("Во сколько обойдется?");
+    //     if((typeof(cost) !== null) && (typeof(price) !== null) && (cost !== "") && (price !== "")) {
+    //       appData.expenses[cost] = price;
+    //     } else {
+    //       let cost = prompt("Введите обязательную статью расходов в этом месяце?");
+    //       let price = prompt("Во сколько обойдется?");
+    //     }
+      
+    //  }
+ 
+let i = 0;
+//  while (i < 2) {
+//   let cost = prompt("Введите обязательную статью расходов в этом месяце?");
+//   let price = prompt("Во сколько обойдется?");
+//     if((typeof(cost) !== null) && (typeof(price) !== null) && (cost !== "") && (price !== "")) {
+//       appData.expenses[cost] = price;
+//     } else {
+//       let cost = prompt("Введите обязательную статью расходов в этом месяце?");
+//       let price = prompt("Во сколько обойдется?");
+//     }
+//     i++;
+//  }
 
+do {
+  let cost = prompt("Введите обязательную статью расходов в этом месяце?");
+  let price = prompt("Во сколько обойдется?");
+    if((typeof(cost) !== null) && (typeof(price) !== null) && (cost !== "") && (price !== "")) {
+      appData.expenses[cost] = price;
+    } else {
+      let cost = prompt("Введите обязательную статью расходов в этом месяце?");
+      let price = prompt("Во сколько обойдется?");
+    }
+    i++;
+} while (i < 2);
 
-appData.expenses.cost1 = price1;
-appData.expenses.cost2 = price2;
 
 console.log(appData);
-let totalBudget = money / 30;
-alert(`Ваш бюджет на 1 день составляет: ${totalBudget}`);
+appData.totalBudget = appData.budget / 30;
+alert(`Ваш бюджет на 1 день составляет: ${appData.totalBudget}`);
+
+if (appData.totalBudget < 100) {
+  console.log("Минимальный достаток");
+} else if (appData.totalBudget > 100 && appData.totalBudget < 2000 ) {
+  console.log("Средний достаток");
+} else if(appData.totalBudget > 2000) {
+  console.log("Высокий достаток");
+} else {
+  console.log("Введите верные значения");
+}
