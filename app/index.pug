@@ -6,12 +6,11 @@ html(lang="en")
     title Landing
     link(rel="stylesheet",href="./css/libs.min.css")
     link(rel="stylesheet", href="./css/style.min.css")
-  body
-   .container
-    
-   script(src="https://code.jquery.com/jquery-3.4.1.js"
-			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-			  crossorigin="anonymous")
+    link(rel='stylesheet', href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css', integrity='sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p', crossorigin='anonymous')
+
+  body.body
+   include pages/header.pug
+   script(src="https://code.jquery.com/jquery-3.4.1.js")
    script(src="./js/libs.min.js")
    script(src="./js/main.js")
   

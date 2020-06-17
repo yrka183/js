@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'HelveticaLight', sans-serif;
+    src: local("Helvetica"),url("../fonts/Helvetica-LT-Std-Light-Condensed_22481.ttf") format("ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaBold',sans-serif;
+    src: local("HelveticaBold"),src("../fonts/HelveticaLTStd-Bold.otf")
+    format(".otf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyriadPro",sans-serif;
+    src: local("MyriadPro"),src("../fonts/MyriadPro-Semibold.otf") format(".otf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SansationRegular",sans-serif;
+    src: local("SansationRegular"),src("../fonts/Sansation_Regular.ttf") format(".ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SansationBold",sans-serif;
+    src: local("SansationBold"),url("../fonts/Sansation_Bold.ttf") format(".ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NeotericBold";
+    src:local("NeotericBold"),url("../fonts/NEOTERICc - Bold DEMO VERSION.ttf") format(".ttf");
+    font-weight: 700;
+    font-style: normal;
+}

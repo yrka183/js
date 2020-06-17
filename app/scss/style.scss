@@ -1,12 +1,12 @@
 //systam styles
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900|Roboto:300,400,500,700,900&display=swap');
 @import "vars";
 @import "libs";
 @import "fonts";
 @import "global";
+@import "animate";
 
 
 //pages styles
 
-
+@import "header.scss";
 
